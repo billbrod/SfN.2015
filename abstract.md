@@ -13,33 +13,41 @@ Cognition and Behavior -- Human Cognition and Behavior -- Decision making and re
 
 #Abstract#
 
-The majority of human interactions with each other require the
-understanding of others' actions and intentions, and the use of this
-engagement when making decisions or formulating strategies. However,
-engagement in a given task under a given set of conditions is far from
-uniform and measure it typically requires a long period of time. In
-this study, we used a competitive game-playing task, wherein subjects
-controlled the ball in a simplified penalty kick against a human or
-computer goalie, to investigate engagement over a single trial. We
-predict that trials where participants were more engaged will be
-reliably differentiable from those where they were less engaged with
-their opponents, with different patterns of activation found in the
-Temporoparietal Junction (TPJ) and ... **(?)**. Using clustering and
-Principal Component Analysis (PCA), we have found trials can be
-understood as lying along two major axes: position at final time point
-and y-separation from goalie. These dimensions can be used as proxies
-for engagement with the opponent: did the player controlling the ball
-start the trial with a strategy or are they just reacting to the
-goalie's movements? We predict that activation in relevant social
-areas, such as the TPJ, can be classified into categories based on
-these trial-wise measures.
+The majority of human interactions require the understanding of
+others' actions and intentions -- a process commonly labeled as social
+cognition or theory of mind -- which then feeds into the strategic
+control of behavior and decision making. Most such tasks... static or
+sequential interactions; social network, notably the temporal-parietal
+junction (TPJ). Here, we adapted a dynamic competitive game... wherein
+human subjects controlled the ball in a simplified penalty kick
+against a human or computer opponent, while measures of brain
+activation were obtained using functional magnetic resonance imaging
+(fMRI). *This allows classification of participant behavior*... XX and
+k-means clustering revealed that participant behavior classified
+(reduced?) into two pairs of clusters, one pair representing early
+deception (i.e., separation between participant and opponent near the
+start of the trial) and another pair representing late deception
+(i.e., separation at the end of the trial). These cluster pairs -- each
+further separable into upward or downward movements -- correspond to
+distinct strategies in behavior based on analyses of time courses and
+xx. Using multivariate pattern analysis (MVPA), we examined whether
+local brain regions carried information that predicted trial features
+(e.g., opponent, outcome, deception strategy). We found that...
+[human vs. computer result]. Using this dynamic task allows
+distinction of strategic elements of deception (e.g., timing of
+movement) from the conditions that elicit deception, the nature of the
+opponent, and the outcome of the action. Accordingly, the use of
+dynamic tasks can reveal new information about the online processing
+that shapes social deception.
 
 ---
 
-Questions:
+Still need:
 
-* How mention prefrontal cortex?
-* I have definitely lost sight of the big picture of this study...
-* Feel like I should play up MVPA more...
-* I guess I'm not sure that separation can actually be used as a proxy for engagement
-* And how about deception?
+* "XX and kmeans" to "looking at relative y position ..." or something like that
+* one-sentence summary for task
+* why does it matter that it's **our** task, why's it better than others
+* Task is a deception task, but can you use other words to describe
+  the behaviors revealed by our cluster, like along the lines of
+  "strategies intended to..."
+* Title
