@@ -1,9 +1,17 @@
 ---
+encoding: utf-8
 geometry: margin=2cm
 tags: [+PenaltyKik, +Abstract, +Presentation, +SfN15]
 date: 2015-04-27
-title: SfN 2015 Abstract
-author: William F. Broderick, Mariano Tepper, R. McKell Carter, Guillermo Sapiro, Scott Huettel
+title: A multi-variate pattern analysis investigation of strategic thinking and deception in a dynamic, competitive game.
+author:
+- William F. Broderick
+- R. McKell Carter
+- Mariano Tepper
+- Jean-François Gariépy
+- Guillermo Sapiro
+- Michael L. Platt
+- Scott A. Huettel
 
 ---
 
@@ -16,24 +24,32 @@ Cognition and Behavior -- Human Cognition and Behavior -- Decision making and re
 The majority of human interactions require the understanding of
 others' actions and intentions -- a process commonly labeled as social
 cognition or theory of mind -- which then feeds into the strategic
-control of behavior and decision making. Most such tasks... static or
-sequential interactions; social network, notably the temporal-parietal
-junction (TPJ). Here, we adapted a dynamic competitive game... wherein
-human subjects controlled the ball in a simplified penalty kick
-against a human or computer opponent, while measures of brain
-activation were obtained using functional magnetic resonance imaging
-(fMRI). *This allows classification of participant behavior*... XX and
-k-means clustering revealed that participant behavior classified
-(reduced?) into two pairs of clusters, one pair representing early
-deception (i.e., separation between participant and opponent near the
-start of the trial) and another pair representing late deception
-(i.e., separation at the end of the trial). These cluster pairs -- each
-further separable into upward or downward movements -- correspond to
-distinct strategies in behavior based on analyses of time courses and
-xx. Using multivariate pattern analysis (MVPA), we examined whether
-local brain regions carried information that predicted trial features
-(e.g., opponent, outcome, deception strategy). We found that...
-[human vs. computer result]. Using this dynamic task allows
+control of behavior and decision making. Most such tasks employ static
+or sequential interactions, which show the engagement of the social
+network, notably the temporal-parietal junction (TPJ). They do not,
+however, allow one to investigate differing levels of
+**[social cognition / engagement]** over short time scales. In this
+study, we adapted a dynamic, competitive game wherein human subjects
+controlled the ball in a simplified penalty kick against a human- or
+computer-controlled goalie, while measures of brain activation were
+obtained using functional magnetic resonance imaging (fMRI). This
+allowed us to carry out detailed investigation of subjects'
+interactions with their opponent, the strategies they employ, and how
+all relevant factors change over time on both large and small
+scales. K-means clustering on the difference between the y position of
+the subject-controlled ball and their human opponent revealed that
+participant behavior naturally reduced to two pairs of clusters, one
+pair representing **strategies involving feints and misdirection**
+(i.e., separation between participant and opponent near the start of
+the trial) and another pair representing **strategies intended to hide
+intention for as long as possible** (i.e., separation only at the end
+of the trial). These cluster pairs -- each further separable into
+upward or downward movements -- correspond to distinct strategies in
+behavior based **only on analyses of behavioral time courses**. Using
+multivariate pattern analysis (MVPA), we examined whether local brain
+regions carried information that predicted trial features (e.g.,
+opponent, outcome, deception strategy). We found
+that ... **[human v computer result]**. Using this dynamic task allows
 distinction of strategic elements of deception (e.g., timing of
 movement) from the conditions that elicit deception, the nature of the
 opponent, and the outcome of the action. Accordingly, the use of
@@ -42,12 +58,7 @@ that shapes social deception.
 
 ---
 
-Still need:
-
-* "XX and kmeans" to "looking at relative y position ..." or something like that
-* one-sentence summary for task
-* why does it matter that it's **our** task, why's it better than others
-* Task is a deception task, but can you use other words to describe
-  the behaviors revealed by our cluster, like along the lines of
-  "strategies intended to..."
-* Title
+* Human v computer result currently shows best classification in
+  occipital cortex and FFA, since we're doing it at the time point
+  when the opponent's picture is shown. I'm not sure this is an
+  interesting result to mention...
