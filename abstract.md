@@ -21,40 +21,31 @@ Cognition and Behavior -- Human Cognition and Behavior -- Decision making and re
 
 #Abstract#
 
-The majority of human interactions require the understanding of
-others' actions and intentions -- a process commonly labeled as social
-cognition or theory of mind -- which then feeds into the strategic
-control of behavior and decision making. Most such tasks employ static
-or sequential interactions, which show the engagement of the social
-network, notably the temporal-parietal junction (TPJ). They do not,
-however, allow one to investigate differing levels of
-**[social cognition / engagement]** over short time scales. In this
+Most successful human interactions depend upon the interpretation of a contact’s behaviors and intentions in order to support strategic control of the actor’s behaviors and decisions. Interpreting other’s actions require many elements of social cognition including more complex functions like theory of mind. Although there is some consistency in the neural substrates identified as supporting these functions (e.g. the medial-prefrontal cortex and temporal-parietal junction (TPJ)), these interactions are difficult to study on a short time scale. Most tasks employ static or long sequential interactions that do not allow one to investigate differing levels of social-cognitive engagement over short time scales. In this
 study, we adapted a dynamic, competitive game wherein human subjects
 controlled the ball in a simplified penalty kick against a human- or
 computer-controlled goalie, while measures of brain activation were
 obtained using functional magnetic resonance imaging (fMRI). This
 allowed us to carry out detailed investigation of subjects'
 interactions with their opponent, the strategies they employ, and how
-all relevant factors change over time on both large and small
+relevant factors change over time on both short and longer time
 scales. K-means clustering on the difference between the y position of
 the subject-controlled ball and their human opponent revealed that
-participant behavior naturally reduced to two pairs of clusters, one
-pair representing **strategies involving feints and misdirection**
+participant behavior reduced to two clusters, one
+pair representing early feints and misdirections**
 (i.e., separation between participant and opponent near the start of
-the trial) and another pair representing **strategies intended to hide
-intention for as long as possible** (i.e., separation only at the end
-of the trial). These cluster pairs -- each further separable into
+the trial) and another representing strategies intended to hide the kicker’s
+intention for as long as possible (i.e., separation only at the end
+of the trial). These clusters -- each further separable into pairs of
 upward or downward movements -- correspond to distinct strategies in
 behavior based **only on analyses of behavioral time courses**. Using
 multivariate pattern analysis (MVPA), we examined whether local brain
 regions carried information that predicted trial features (e.g.,
-opponent, outcome, deception strategy). We found
-that ... **[human v computer result]**. Using this dynamic task allows
+opponent, outcome, deception strategy). Confirmatory analyses found
+that visual regions can be used to classify human from computer opponents at the time the opponent is revealed. MVPA of strategic interaction focused on the neural response difference between early and late behavioral clusters. Using this dynamic task allows
 distinction of strategic elements of deception (e.g., timing of
 movement) from the conditions that elicit deception, the nature of the
-opponent, and the outcome of the action. Accordingly, the use of
-dynamic tasks can reveal new information about the online processing
-that shapes social deception.
+opponent, and the outcome of the action. The use of dynamic tasks facilitates the study of the nature and characteristics of strategic social interaction on short timescales opening avenues for causal studies of the supporting neural substrates. 
 
 ---
 
@@ -62,3 +53,5 @@ that shapes social deception.
   occipital cortex and FFA, since we're doing it at the time point
   when the opponent's picture is shown. I'm not sure this is an
   interesting result to mention...
+
+
