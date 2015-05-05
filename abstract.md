@@ -23,7 +23,7 @@ Cognition and Behavior -- Human Cognition and Behavior -- Decision making and re
 
 Most successful human interactions depend upon the interpretation of
 an agent's behaviors and intentions in order to support strategic
-control of the actor's behaviors and decisions. Interpreting others'
+control of the agent's behaviors and decisions. Interpreting others'
 actions require many elements of social cognition, including more
 complex functions like theory of mind. Although there is some
 consistency in the neural substrates identified as supporting these
@@ -47,16 +47,18 @@ strategies intended to hide the kicker's intention for as long as
 possible (i.e., separation only at the end of the trial). These
 clusters -- each further separable into pairs of upward or downward
 movements -- correspond to distinct strategies expressed in behavioral
-time courses. Using multivariate pattern analysis (MVPA), we examined
-whether local brain regions carried information that predicted trial
-features (e.g., opponent, outcome, deception strategy). Confirmatory
-analyses found that visual regions can be used to classify human from
-computer opponents at the time the opponent is revealed. MVPA of
-strategic interaction focused on the neural response difference
-between the two strategy-defined clusters. Using this dynamic task
-allows distinction of strategic elements of deception (e.g., timing of
-movement) from the conditions that elicit deception, the nature of the
-opponent, and the outcome of the action. The use of dynamic tasks
-facilitates the study of the nature and characteristics of strategic
-social interaction on short timescales, opening avenues for causal
-studies of the supporting neural substrates.
+time courses. Play against a computer opponent serves as a non-social
+baseline with similar strategic interactions. Using multivariate
+pattern analysis (MVPA), we examined whether local brain regions
+carried information that predicted trial features (e.g., opponent,
+outcome, strategy). Confirmatory analyses found that visual
+regions can be used to classify human from computer opponents at the
+time the opponent is revealed. MVPA of strategic interaction focused
+on the neural response difference between the two strategy-defined
+clusters. Using this dynamic task allows distinction of strategic
+elements of deception (e.g., timing of movement) from the conditions
+that elicit deception, the nature of the opponent, and the outcome of
+the action. The use of dynamic tasks facilitates the study of the
+nature and characteristics of strategic social interaction on short
+timescales, opening avenues for causal studies of the supporting
+neural substrates.
