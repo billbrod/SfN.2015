@@ -67,4 +67,67 @@
   of studies are static, talk a bit about the monkey study, then move
   into our stuff.
 
+  From McKell, in reference to commit [[https://github.com/billbrod/SfN.2015/commit/18c63e0c7d7f1125d357a273b8b2d8351fdba04f][18c63e0]]: titles are a bit long
+  and should focus on what should be taken away, not details. Can add
+  details in bullets below. Someone should be able to just read the
+  titles and understand what I want them to take away. For this, write
+  my main question and what answer I want them to leave with (should
+  be how or why not yes/no). Would be good to have preliminary data
+  from JF or Caroline in that first column: why is this task good,
+  what does it tell us that others don't? What does human data bring
+  to the equation? What are our goals? Then can shrink those two big
+  screen pics and move to the second column (have movie example of
+  trial on tablet). Describe the planned imaging analyses and can
+  maybe add a few things last minute. Put references in bottom right
+  corner.
+
+  - [X] Write main question and answer down, use as frame
+  - [X] Rework titles
+  - [X] Add bullet points
+  - [X] Get preliminary data from JF or Caroline in first column
+  - [X] Why this task? What does human data bring? What are our goals?
+  - [X] Shrink and move screen pics to second column
+  - [ ] Put movie example on tablet
+  - [ ] Describe imaging analysis
+    - [ ] Create image summarizing MVPA searchlight regression (see
+      McKell's poster for inspiration, use [[https://www.csie.ntu.edu.tw/~cjlin/libsvm/index.html?js=1#svm-toy-js][LibSVM]] applet to generate
+      example regression)
+    - [ ] Create image summarizing Stelzer et al's cluster method (see
+      their figures 1 and 2, but those are very text heavy
+
+  Main question: How do humans use deception to attempt to beat their
+  opponents in a competitive, dynamic game?
+
+  Answer: They use a mixture of two strategies, early and late
+  deception, in an attempt to both deceive and be unpredictable. 
+
+  To make this more interesting, looking at trial-to-trial
+  dependencies (correlation on metric between trials and metric over
+  time) would help, as well as showing there's no difference in
+  win/loss percentages. Could also include figure showing metric
+  vs. computer; include distribution?
+
+  For monkey stuff: all their figures are either mutual information
+  (which we can't use) or neuronal recordings. What are their points?
+  That monkeys much less predictable against live opponents, use
+  pre-planned feints (neurons in DLPFC) to attempt to deceive
+  opponents. Inhibiting those neurons makes them much more
+  predictable. Additionally, eye gaze prior to trial onset much more
+  predictable than position until very close to end. So this shows us
+  that there are neuronal correlates of planned deception.
+
+  Why this task? Dynamic, allows us to investigate deception online,
+  more like real-world situation where agents are reacting to each
+  other, in contrast to many other tasks where deception is static or
+  sequential. 
+
+  What does human data bring? Humans appear to use more deception, in
+  more intentional ways than other primates (?), our data shows that
+  the manner in which they deceive is very different (go back much
+  more often, movements are not nearly as pre-planned)
+
+  What are our goals? To see how similar humans are to monkeys, how
+  participants use deception to attempt to beat their opponents in a
+  competitive game.
+
   
