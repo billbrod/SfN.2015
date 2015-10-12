@@ -88,12 +88,16 @@
   - [X] Why this task? What does human data bring? What are our goals?
   - [X] Shrink and move screen pics to second column
   - [ ] Put movie example on tablet
-  - [ ] Describe imaging analysis
-    - [ ] Create image summarizing MVPA searchlight regression (see
+  - [X] Describe imaging analysis
+    - [X] Create image summarizing MVPA searchlight regression (see
       McKell's poster for inspiration, use [[https://www.csie.ntu.edu.tw/~cjlin/libsvm/index.html?js=1#svm-toy-js][LibSVM]] applet to generate
       example regression)
-    - [ ] Create image summarizing Stelzer et al's cluster method (see
+    - [X] Create image summarizing Stelzer et al's cluster method (see
       their figures 1 and 2, but those are very text heavy
+  - [X] Check if players using mixed-strategy outperform those who use
+    only one -- doesn't quite look like that, sent note to McKell to
+    see what he thinks
+
 
   Main question: How do humans use deception to attempt to beat their
   opponents in a competitive, dynamic game?
