@@ -134,4 +134,117 @@
   participants use deception to attempt to beat their opponents in a
   competitive game.
 
+* Spiel
+
+  Competition requires a player to deceive or somehow out-maneuever
+  their opponent in order to achieve their goal, a process that is
+  inherently responsive and flexible. But most tasks used to study
+  deception or competition are static, with a turn-taking structure
+  that limits interaction between players. We used a simplified
+  penalty shot task, originally developed for macaque
+  electrophysiology studies, to investigate dynamic deception as it
+  happens in real time.
+
+  Monkeys playing this task showed pre-planned deception: the eyes and
+  DLPFC neuron activity of the monkey controlling the ball at the
+  beginning of the trail were predictive of the ball's location at the
+  end of the trial (more predictive than location alone until towards
+  the end of the trial). This pattern was not seen when playing
+  against a algorithmically-controlled goalie or a goalie that was
+  simply a recording of earlier trials, which suggests that it was
+  specifically the engagement with the other monkey that drove this. 
+
+  To see if humans showed a similar pattern, we gathered fMRI data
+  from 29 participants while they controlled the ball in a penalty
+  shot task. They needed to get past a human goalie to score (also had
+  data against a computer goalie, but their actions there aren't as
+  interesting, so I'm not discussing them here). They had 10 seconds
+  to finish the game, or they would time out. They could move forward
+  or backward, up or down, in any way they wanted.
+
+  As an attempt to see what they were doing, we took the y-difference
+  between the ball and the goalie, normalized the length of the trial
+  to 80 (average is 3.44 seconds) and used k-means clustering (4
+  means) to see what patterns existed in the data. We saw two
+  strategies, each expressed in up and down directions: "early" and
+  "late". 
+
+  The early trials are trials where the participant got separation
+  early and then doubled back when attempting to score. This seems
+  like misdirection. The late trials are those where the participant
+  was tracked by the goalie the whole way and then made a break
+  towards the end. This seems like hiding of information.
   
+  This is clearly not all the structure in the data, but it is some of
+  it, so we decided to run with it.
+
+  We used PCA to reduce the dimensionality of the data and found,
+  remarkably, that the clustering and categorization was pretty much
+  the same all the way down to 2 dimensions. When we plot the trials
+  in 2 dimensions though, we notice that the trials seem to vary
+  continuously between the extremes corresponding to these
+  archetypical strategies. 
+
+  Therefore, we decided that classification between these strategies
+  doesn't make too much sense, since it seems to be pretty
+  continuous. Instead, we defined a strategy metric, which summarizes
+  where a trial lies between these two extremes. And this is the
+  target we use for whole brain MVPA searchlight regression.
+
+  So MVPA searchlight regression is similar to your classic MVPA
+  searchlight classification, where you take a 3-voxel sphere centered
+  at each voxel in the brain, look at the activation within that
+  sphere, and see how that relates to your target. For classification,
+  you fit a classifier, like a linear SVM, to separate your
+  categories. For regression, we use Nu-parameterized support vector
+  regression to determine how the activity of the voxels in the sphere
+  relate to the trial-wise metric. This gets you an error value (for
+  us 1 - correlation between real and predicted metric) in each
+  searchlight across the brain. We did this within each subject
+  separately, using between-run cross-validation (4 runs for all but
+  one subject, who had 3).
+
+  To determine statistical significance, we used Stelzer et al 2013's
+  group cluster thresholding method. It was originally developed for
+  MVPA classification, but works for regression as well. In it, you
+  permute the labels (metric values) on all trials 50 times such that
+  all subjects, searchlights and cv folds have the same permutation
+  (to preserve any correlations there). You then run your MVPA on
+  these permuted maps so that, for each subject, you have 50 chance
+  accuracy maps (takes a while). You then boot-strap up a group null
+  distribution of accuracy maps by picking one map from each subject
+  (with replacement) and averaging them together, 100k times. You then
+  use these group chance maps to construct voxel-by-voxel null
+  distributions (to compare to real group accuracy map), thresholding
+  at p=.005. The key step is the next one though: we're not interested
+  in solitary voxels, we're interested in coherent clusters, so you
+  also construct a null distribution of clusters, constructing
+  clusters in your chance maps (considering voxels within a cluster
+  together if their faces tough) and using them to create a null
+  distribution of cluster sizes. You then use this to threshold
+  cluster sizes at p=.05, and then correct for multiple comparisons
+  corrections (again at p=.05) and see what remains.
+
+  We're not totally finished with this yet, but we have some
+  preliminary imaging results. All of the above process reveals three
+  clusters significantly predictive of the strategy metric: right
+  ventral temporal cortex, right inferior parietal cortex, and right
+  occipital cortex.
+
+  Our next steps: run some other data through this pipeline to validate
+  it, look into the metric more (we know that this is still hiding
+  some variability, want to see how important/big that remaining
+  variability is).
+
+  So, conclusion: subject behavior has two broad archetypes, and our
+  strategy metric allows us to summarize their strategy on a
+  trial-by-trial basis. Preliminary imaging results as above.
+
+  _If people ask_:
+
+  About threshold of $p=.005$: Stelzer et al 2013 recommends a
+  threshold between .005 and .001, we went with .005 because at .001
+  we're concerned that clusters are getting broken up. That's still a
+  concern here, actually, and we're looking to change the "connected
+  scheme" from face- to edge- or vertex-connected to get them back
+  together
